@@ -1,0 +1,12 @@
+\\\ grey colour = #A2A7A9 .celsius_fareheit {
+  color: rgb(32, 33, 36);
+  display: inline;
+  font-size: 16px;
+  font-weight: 400;
+  height: 24px;
+  line-height: 24px;
+  margin-top: 6px;
+  padding-left: 6px;
+  vertical-align: top;
+  width: 41.9375px;
+}
