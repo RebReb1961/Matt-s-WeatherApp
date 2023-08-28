@@ -1,3 +1,11 @@
-h1 {
-  color: red;
+.weather_app {
+  margin: 30px auto;
+  display: block;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
