@@ -12,6 +12,35 @@ ul {
   padding: 0px;
 }
 
+h1 {
+  color: rgb(32, 33, 36);
+  font-size: 30px;
+  font-weight: 400;
+  height: 22.1125px;
+  line-height: 22.12px;
+  padding-bottom: 4px;
+}
+
+h2 {
+  color: rgb(32, 33, 36);
+  font-size: 16px;
+  font-weight: 400;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 7px;
+  text-align: center;
+}
+
+h4 {
+  color: rgb(32, 33, 36);
+  font-size: 13px;
+  font-weight: 400;
+  height: auto;
+  line-height: 15px;
+  text-align: center;
+  width: auto;
+}
+
 .flexbox-container {
   display: flex;
   border: 1px solid black;
@@ -92,26 +121,4 @@ ul {
 
 .flexbox-item-5 {
   width: 100%;
-}
-
-.flexbox-item-6 {
-  flex-grow: 0;
-}
-.flexbox-item-7 {
-  flex-grow: 0;
-}
-.flexbox-item-8 {
-  flex-grow: 0;
-}
-.flexbox-item-9 {
-  flex-grow: 0;
-}
-.flexbox-item-10 {
-  flex-grow: 0;
-}
-.flexbox-item-11 {
-  flex-grow: 0;
-}
-.flexbox-item-12 {
-  flex-grow: 0;
 }
