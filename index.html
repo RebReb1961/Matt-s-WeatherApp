@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
@@ -25,21 +26,22 @@
               />
             </div>
             <div class="flexbox-item flexbox-item-2">
-              <span class="todays_temperature">18</span>
+              <span class="todays_temperature" id="todays_temperature"></span>
               <span class="celsius_fareheit">°C | <a href="#">°F</a></span>
             </div>
             <div class="flexbox-item flexbox-item-3">
               <ul>
-                <li>Percipitation : 0%</li>
-                <li>Humidity: 62%</li>
-                <li>Wind: 5 mph</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> mps</li>
               </ul>
             </div>
             <div class="flexbox-item flexbox-item-4">
               <ul>
-                <li class="city_name">London</li>
+                <li class="city_name" id="city_name"></li>
                 <li class="date_and_time">Monday 12.00</li>
-                <li class="weather_description">Cloudy</li>
+                <li class="weather_description" id="weather_description">
+                  Cloudy
+                </li>
               </ul>
             </div>
             <div class="flexbox-item flexbox-item-5">

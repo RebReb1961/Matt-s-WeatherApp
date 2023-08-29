@@ -5,6 +5,7 @@ body {
 li {
   list-style: none;
   color: #a2a7a9;
+  text-transform: capitalize;
 }
 
 ul {
