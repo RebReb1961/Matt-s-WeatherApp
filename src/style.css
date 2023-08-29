@@ -45,10 +45,6 @@ h4 {
   width: auto;
 }
 
-.search_button {
-  display: inline-block;
-}
-
 .flexbox-container {
   display: flex;
   border: 1px solid black;
@@ -63,6 +59,12 @@ h4 {
   width: fit-content;
 }
 
+.flexbox-item-0a {
+  flex-grow: 1;
+}
+.flexbox-item-0b {
+  flex-grow: 1;
+}
 .flexbox-item-0c {
   width: 100%;
 }

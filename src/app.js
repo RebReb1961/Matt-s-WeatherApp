@@ -35,7 +35,6 @@ function displayTemperature(response) {
   );
   let currentDateAndTime = document.querySelector("#date_and_time");
   currentDateAndTime.innerHTML = formatDate(response.data.dt * 1000);
-  console.log(response.data.dt);
   let currentIcon = document.querySelector("#current_icon");
   currentIcon.setAttribute(
     "src",
@@ -45,8 +44,8 @@ function displayTemperature(response) {
 }
 
 function search(city) {
-  let apikey = "32cfeae7e997deb93a00c26137e84796";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`;
+  let apiKey = "32cfeae7e997deb93a00c26137e84796";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
 }
 
@@ -82,3 +81,5 @@ farenheitLink.addEventListener("click", displayFarenheit);
 
 let celsiusLink = document.querySelector("#celsius_link");
 celsiusLink.addEventListener("click", displayCelsius);
+
+search("lisbon");
