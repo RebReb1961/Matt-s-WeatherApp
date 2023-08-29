@@ -5,6 +5,9 @@ body {
 li {
   list-style: none;
   color: #a2a7a9;
+}
+
+li::first-letter {
   text-transform: capitalize;
 }
 
