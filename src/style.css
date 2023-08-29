@@ -45,6 +45,10 @@ h4 {
   width: auto;
 }
 
+.search_button {
+  display: inline-block;
+}
+
 .flexbox-container {
   display: flex;
   border: 1px solid black;
@@ -59,6 +63,9 @@ h4 {
   width: fit-content;
 }
 
+.flexbox-item-0c {
+  width: 100%;
+}
 .flexbox-item-1 {
   flex-shrink: 0;
 }
