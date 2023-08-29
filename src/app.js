@@ -22,7 +22,6 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
-  console.log(response);
   document.querySelector("#todays_temperature").innerHTML = Math.round(
     response.data.main.temp
   );
