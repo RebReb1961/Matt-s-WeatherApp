@@ -137,3 +137,30 @@ h4 {
 .farenheit {
   color: rgb(112, 117, 122);
 }
+
+a:link {
+  text-decoration: none;
+  color: rgb(112, 117, 122);
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(112, 117, 122);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.celsius_fareheit .active {
+  color: rgb(33, 33, 33);
+  cursor: pointer;
+}
+
+.celsius_fareheit .active:hover {
+  text-decoration: none;
+}
