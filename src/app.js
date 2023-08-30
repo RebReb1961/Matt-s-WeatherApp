@@ -42,10 +42,10 @@ function formatDate(timestamp) {
 
 function getForecast(coordinates) {
   console.log(coordinates);
-  let apiKey = "5bca7063f20cdecdd413b8c8a0f505d8";
+  let apiKey = `f81614abe2395d5dfecd45b9298041de`;
   let lat = coordinates.lat;
   let lon = coordinates.lon;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}`;
   console.log(apiUrl);
 }
 
