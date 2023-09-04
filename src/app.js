@@ -4,10 +4,27 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = ``;
 
-  forecast.forEach(function (forecastDay) {
-    forecastHTML =
-      forecastHTML +
-      `<div class="flexbox-item"><h2>${formatDate(forecastDay.dt)}</h2>
+  function formatDay(timestamp) {
+    let date = new Date(timestamp * 1000);
+    let day = date.getDay();
+
+    let days = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
+    return days[day];
+  }
+
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        `<div class="flexbox-item"><h2>${formatDay(forecastDay.dt)}</h2>
         <img
         src="https://openweathermap.org/img/wn/${
           forecastDay.weather[0].icon
@@ -18,8 +35,9 @@ function displayForecast(response) {
           <h4>${Math.round(
             forecastDay.temp.max
           )}°<span class="minimum">${Math.round(
-        forecastDay.temp.min
-      )}°</span></h4></div>`;
+          forecastDay.temp.min
+        )}°</span></h4></div>`;
+    }
   });
   forecastElement.innerHTML = forecastHTML;
 }
